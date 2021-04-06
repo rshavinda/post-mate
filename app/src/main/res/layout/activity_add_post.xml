@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".ui.addpost.AddPostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--User Data View -->
+        <LinearLayout
+            android:id="@+id/viewUserData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_cover"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/space_medium"
+                    android:layout_marginEnd="@dimen/space_medium"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_rounded_rec_top_style1"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/space_small"
+                    android:layout_marginTop="@dimen/space_large_plus"
+                    android:layout_marginEnd="@dimen/space_small"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civAvatar"
+                        style="@style/ImageViewAvatar"
+                        app:civ_border_color="@color/grey_400"
+                        app:civ_border_width="0.5dp" />
+
+                    <TextView
+                        android:id="@+id/textViewUserName"
+                        style="@style/UserDataViews"
+                        android:text="@string/user_name"
+                        android:textColor="@color/color_user_name"
+                        android:textSize="@dimen/text_large" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                style="@style/UserDataViews"
+                android:text="@string/name" />
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                style="@style/UserDataViews"
+                android:text="@string/email" />
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewWebSite"
+                style="@style/UserDataViews"
+                android:text="@string/website" />
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                style="@style/UserDataViews"
+                android:text="@string/phone" />
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewCompany"
+                style="@style/UserDataViews"
+                android:text="@string/company" />
+
+            <View style="@style/DividerStyle1" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                style="@style/UserDataViews"
+                android:maxLines="10"
+                android:text="@string/address" />
+
+            <View style="@style/DividerStyle1" />
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_marginTop="@dimen/space_small"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                tools:ignore="FragmentTagUsage" />
+        </LinearLayout>
+
+        <!--Send Post View -->
+        <LinearLayout
+            android:id="@+id/viewSendPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rec_start_style1">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    style="@style/TextAppTitle" />
+            </FrameLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_medium"
+                app:boxBackgroundMode="none">
+
+                <EditText
+                    android:id="@+id/editTextTitle"
+                    style="@style/EditText"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/bg_edit_text_style1"
+                    android:hint="@string/add_title_here"
+                    android:imeOptions="actionNext"
+                    tools:ignore="Autofill,RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_medium"
+                android:layout_marginEnd="@dimen/space_medium"
+                app:boxBackgroundMode="none">
+
+                <EditText
+                    android:id="@+id/editTextPostBody"
+                    style="@style/EditText"
+                    android:layout_height="220dp"
+                    android:background="@drawable/bg_edit_text_style1"
+                    android:gravity="top"
+                    android:hint="@string/add_your_idea_message"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="8"
+                    android:maxLength="2048"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonAddPost"
+                style="@style/ButtonAdd"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_medium"
+                android:drawableEnd="@drawable/ic_send_post"
+                android:drawablePadding="@dimen/space_small"
+                android:paddingStart="@dimen/space_medium"
+                android:paddingEnd="@dimen/space_medium"
+                android:text="@string/add_post"
+                android:textSize="@dimen/text_sub_header"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

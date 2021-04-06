@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Codes from Google's Material design color palette: https://material.io/resources/color/#!/ -->
+    <!-- Official color tools : https://material-ui.com/customization/color/ -->
+    <!-- Normal colors: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
+         Accent colors: A100, A200, A400, A700 -->
+
+    <!-- https://github.com/rshavinda/android-canvas -->
+
+    <!-- Dark theme palette -->
+    <color name="color_status_bar">@color/black</color>
+    <color name="color_app_bar">@color/grey_900</color>
+    <color name="color_background">#303030</color>
+    <color name="color_cards_dialogs">@color/grey_800</color>
+
+    <color name="color_base">@color/white</color>
+    <color name="color_text">@color/white_text_primary</color>
+    <color name="color_text_secondary">@color/white_text_secondary</color>
+    <color name="color_text_disabled">@color/white_text_disabled</color>
+    <color name="color_dividers">@color/white_dividers</color>
+
+    <color name="color_user_name">#83BBF8</color>
+    <color name="color_user_data_text">@color/indigo_50</color>
+
+    <color name="color_background_card_1">#3C3C3C</color>
+    <color name="color_background_card_2">#353535</color>
+
+    <color name="color_background_button_1">@color/purple_600</color>
+    <color name="color_background_button_2">@color/purple_800</color>
+    <color name="color_background_button_3">@color/purple_900</color>
+
+    <color name="color_background_box_1">@color/grey_500</color>
+
+</resources>

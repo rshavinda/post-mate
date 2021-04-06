@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Post Mate</string>
+    <string name="add_title_here">Add title here</string>
+    <string name="add_your_idea_message">Add your idea / message</string>
+    <string name="error_empty_title">Please enter the title of your post!</string>
+    <string name="error_empty_message">Please enter your post message!</string>
+    <string name="error_default">Something went wrong please try again!</string>
+    <string name="no_internet">No Internet!</string>
+    <string name="no_internet_error">Please check your internet connection and try again!</string>
+    <string name="success_post_post">Your post was successfully added!</string>
+
+    <!-- \u0020 : white space-->
+    <string name="name">Name :\u0020</string>
+    <string name="email">Email :\u0020</string>
+    <string name="website">Website :\u0020</string>
+    <string name="phone">Phone :\u0020</string>
+    <string name="company">Company :\u0020</string>
+    <string name="address">− Address −</string>
+    <string name="user_name">User Name :\u0020</string>
+    <string name="add_post">Add Post</string>
+    <string name="location_title">%1$s\'s Location</string>
+
+    <string name="no_comment">− No Comment −</string>
+    <string name="one_comment">− 1 Comment −</string>
+    <string name="comment_with_count">− %1$s Comments −</string>
+    <string name="add">Add</string>
+
+    <string name="button_retry">Retry</string>
+    <string name="button_cancel">Cancel</string>
+</resources>
